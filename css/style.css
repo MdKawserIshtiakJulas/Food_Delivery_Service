@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --nav-bg-color: rgba(0, 0, 0, 0.6);
+    --nav-color: whitesmoke;
+    --nav-font: 'Georama', sans-serif;
+    --heading-font: 'Roboto Mono', monospace;
+    --btn-font: 'Baloo Bhai 2', sans-serif;
+    --default-font: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--default-font);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.6rem;
+}
+
+h2 {
+    font-size: 2.3rem;
+}
+
+h3 {
+    font-size: 1.7rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.btn {
+    padding: 5px 10px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bolder;
+    border-radius: 5px;
+    font-family: var(--btn-font);
+    background-color: black;
+    color: whitesmoke;
+    border: none;
+}
+
+#navbar, #home {
+    color: whitesmoke;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    font-family: var(--nav-font);
+    background-color: var(--nav-bg-color);
+    width: 100%;
+    z-index: 2;
+}
+
+#logo {
+    margin: 10px 20px;
+}
+
+#logo img {
+    margin: 3px;
+    height: 60px;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+.nav-items {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+.nav-items a {
+    padding: 5px 20px;
+    text-decoration: none;
+    color: var(--nav-color);
+    border-radius: 6px;
+}
+
+.nav-items a:hover {
+    color: var(--nav-bg-color);
+    background-color: var(--nav-color);
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 150px;
+    height: 650px;
+}
+
+#home::before {
+    content: '';
+    width: 100%;
+    height: 750px;
+    z-index: -1;
+    background: url('../images/background.jpg') no-repeat center center/cover;
+    position: absolute;
+    opacity: 0.9;
+    top: 0;
+    left: 0;
+}
+
+#home h1 {
+    padding: 15px;
+}
+
+#home p {
+    text-align: center;
+    padding: 15px;
+}
+
+#home button {
+    width: 50%;
+    margin-top: 10px;
+}
+
+#services {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0px;
+    background-color: rgb(255, 249, 196);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    align-items: center;
+    width: 25%;
+}
+
+.card img {
+    height: 170px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+.card p {
+    text-align: justify;
+}
+
+#clients {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+#clients::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+    background: url('../images/clients-background.png') no-repeat center center/cover;
+    position: absolute;
+}
+
+#clients h2 {
+    background-color: rgb(71, 1, 71);
+    color: whitesmoke;
+    width: 100%;
+    padding: 7px 0px;
+}
+
+#clients-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px 0px;
+}
+
+.client-logo {
+    padding: 20px;
+}
+
+.client-logo img {
+    width: 150px;
+    height: 150px;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}
+
+#contact::before {
+    content: '';
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../images/contact.jpg') no-repeat center center/cover;
+}
+
+#contact h2 {
+    margin: 20px;
+}
+
+#contact hr {
+    height: 600px;
+    border: 3px solid black;
+    border-radius: 10px;
+    color: black;
+}
+
+#contact-box {
+    margin-left: 20px;
+}
+
+#contact-box form {
+    width: 400px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0px;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: var(--default-font);
+}
+
+#submit-reset {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+#submit-reset input {
+    width: 411px;
+    margin: 10px 0px;
+}
+
+footer {
+    background-color: black;
+    color: whitesmoke;
+}
+
+footer p {
+    padding: 10px;
+}

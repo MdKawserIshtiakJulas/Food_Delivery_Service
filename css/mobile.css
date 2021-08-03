@@ -1,0 +1,79 @@
+h1 {
+    font-size: 2rem;
+}
+
+.btn {
+    font-size: 1.4rem;
+}
+
+#navbar {
+    flex-direction: column;
+}
+
+.nav-items {
+    padding-bottom: 10px;
+}
+
+.nav-items a {
+    padding: 0px 7px;
+    font-size: 1rem;
+}
+
+#home {
+    padding: 0px 10px;
+}
+
+#services {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.card {
+    border: 2px solid black;
+    background-color: rgb(255, 249, 196);
+    border-radius: 10px;
+    margin: 10px 0px;
+    width: 70%;
+}
+
+.card img {
+    width: 200px;
+}
+
+#clients-logo {
+    flex-wrap: wrap;
+}
+
+#contact {
+    flex-direction: column;
+}
+
+#contact h2 {
+    margin: 0;
+    background-color: rgb(71, 1, 71);
+    color: whitesmoke;
+    width: 100%;
+    padding: 7px 0px;
+}
+
+#contact hr {
+    visibility: hidden;
+}
+
+#contact-box {
+    margin-left: 0px;
+}
+
+#contact-box form {
+    width: 60vw;
+}
+
+.form-group textarea {
+    width: 100%;
+}
+
+#submit-reset input {
+    width: 61vw;
+}
