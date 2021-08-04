@@ -284,6 +284,7 @@ p {
 footer {
     background-color: black;
     color: whitesmoke;
+    text-align: center;
 }
 
 footer p {
