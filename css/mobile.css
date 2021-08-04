@@ -6,6 +6,8 @@ h1 {
     font-size: 1.4rem;
 }
 
+/* Navigation Menu */
+
 #navbar {
     flex-direction: column;
 }
@@ -19,9 +21,13 @@ h1 {
     font-size: 1rem;
 }
 
+/* Home Section */
+
 #home {
     padding: 0px 10px;
 }
+
+/* Services Section */
 
 #services {
     flex-direction: column;
@@ -42,9 +48,13 @@ h1 {
     width: 200px;
 }
 
+/* Clients Section */
+
 #clients-logo {
     flex-wrap: wrap;
 }
+
+/* Contact Section */
 
 #contact {
     flex-direction: column;
